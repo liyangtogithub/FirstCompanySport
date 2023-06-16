@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/aboutus"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/pink"
+    android:orientation="vertical" >
+    
+         <include 
+	   android:layout_width="match_parent"
+	   android:layout_height="@dimen/edge_90"
+	   layout = "@layout/rl_title"
+     />
+
+         <include 
+	   android:layout_width="match_parent"
+	   android:layout_height="match_parent"
+	   layout = "@layout/tab5_medal"
+     />
+
+
+         
+</LinearLayout>

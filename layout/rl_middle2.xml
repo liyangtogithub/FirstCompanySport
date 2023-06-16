@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/middle2height"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/rl_data1"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"
+        android:background="@color/gray_light" >
+
+        <ImageView
+            android:id="@+id/iv_data1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/downarrow" />
+
+        <TextView
+            android:id="@+id/tv_data1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:shadowColor="@color/white"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:singleLine="true"
+            android:text="0"
+            android:textColor="@color/gray_data"
+            android:textSize="@dimen/fontsize_42" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="@dimen/edge_2"
+        android:layout_height="fill_parent"
+        android:background="@color/white" />
+
+    <RelativeLayout
+        android:id="@+id/rl_data2"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"
+        android:background="@color/gray_light" >
+
+        <ImageView
+            android:id="@+id/iv_data2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/downarrow" />
+
+        <TextView
+            android:id="@+id/tv_data2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:shadowColor="@color/white"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:singleLine="true"
+            android:text="0"
+            android:textColor="@color/gray_data"
+            android:textSize="@dimen/fontsize_42" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="@dimen/edge_2"
+        android:layout_height="fill_parent"
+        android:background="@color/white" />
+
+    <RelativeLayout
+        android:id="@+id/rl_data3"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"
+        android:background="@color/gray_light" >
+
+        <ImageView
+            android:id="@+id/iv_data3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/downarrow" />
+
+        <TextView
+            android:id="@+id/tv_data3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:shadowColor="@color/white"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:singleLine="true"
+            android:text="0"
+            android:textColor="@color/gray_data"
+            android:textSize="@dimen/fontsize_42" />
+    </RelativeLayout>
+
+</LinearLayout>

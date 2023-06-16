@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/white">
+
+ <RelativeLayout
+       android:id="@+id/title"
+	   android:layout_width="fill_parent"
+	   android:layout_height="@dimen/edge_90"
+	   android:orientation="vertical"
+	   android:background="@color/pink">
+
+         <include 
+	   android:layout_width="match_parent"
+	   android:layout_height="match_parent"
+	   layout = "@layout/rl_title"
+     />
+           <Button
+               android:id="@+id/complish"
+               android:layout_width="wrap_content"
+               android:layout_height="fill_parent"
+               android:layout_alignParentRight="true"
+               android:layout_alignParentTop="true"
+               android:background="@drawable/bg_button"
+               android:text="@string/complish"
+               android:textSize="@dimen/fontsize_36"
+               android:textColor="@color/white" 
+               android:paddingLeft="@dimen/edge_20"
+               android:paddingRight="@dimen/edge_20"/>
+                      
+</RelativeLayout> 
+<LinearLayout 
+    android:id="@+id/select"
+    android:layout_width="fill_parent"
+    android:layout_height="45dp"
+    android:background="#e5e5e5"
+    android:orientation="horizontal"
+    >
+    <CheckBox 
+        	android:id="@+id/allselect"
+            android:visibility="visible"
+            android:focusable="false"
+            android:checked="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_gravity="center_vertical"
+            android:layout_margin="3dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/allselected"
+        android:layout_gravity="center_vertical"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+</LinearLayout>"
+  <ListView
+        android:id="@+id/lib_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:divider="#d6d6d6"
+        android:dividerHeight="1dp" 
+        android:background="@color/milkwhite"/>  
+
+</LinearLayout>

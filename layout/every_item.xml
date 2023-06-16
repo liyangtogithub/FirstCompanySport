@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/every_selector"
+    android:orientation="vertical" 
+    android:padding="@dimen/edge_3"
+    android:id="@+id/every_itemLayout"
+    >
+    <View
+ 	android:id="@+id/every_v_edge"
+	android:layout_width="fill_parent"
+	android:layout_height="@dimen/edge_2"
+    android:background="@color/transparent"
+    android:padding="@dimen/edge_0"
+	/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:background="@drawable/shape_item_top"      
+        android:id="@+id/every_relative"
+        >
+         <TextView
+				android:id="@+id/every_sport_type"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"	
+				android:textColor="@color/black"
+				android:textSize="@dimen/fontsize_28"
+				android:layout_alignParentLeft="true" 
+				android:layout_marginLeft="@dimen/edge_20" 
+				/>
+         <TextView
+				android:id="@+id/every_sport_time"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="@color/gray_font"
+				android:textSize="@dimen/fontsize_28"
+				android:layout_alignParentRight="true"
+				android:layout_marginRight="@dimen/edge_20" 
+				/>
+        
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/r4_middle1_type"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/middle1height"
+        layout="@layout/rl_middle1" />
+    
+    <include
+        android:id="@+id/statistics_data"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/middle2height"
+        android:layout_alignParentBottom="true"
+        layout="@layout/rl_middle3"     
+        />
+</LinearLayout>

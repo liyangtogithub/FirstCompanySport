@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/pink"
+    android:orientation="vertical" >
+    <include 
+	    android:id="@+id/rl_middle1_type"
+	    android:layout_width="match_parent"
+        android:layout_height="@dimen/edge_90"
+	    layout = "@layout/rl_title"
+     /> 
+
+ <LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="1"
+	    android:orientation="vertical"
+	     android:layout_marginLeft="@dimen/edge_20"
+        android:layout_marginRight="@dimen/edge_20"     
+        android:layout_marginBottom="@dimen/edge_20"
+        android:background="@drawable/shape_item_share"
+         >
+	    <ListView
+	        android:id="@+id/ffdl_List"
+	        android:layout_width="fill_parent"
+            android:layout_height="wrap_content"  
+            android:layout_marginLeft="@dimen/edge_20"
+	        android:layout_marginRight="@dimen/edge_20"
+            android:divider="@color/list_divider"
+	        android:dividerHeight="0.8dip"
+	        android:scrollbars="none"
+	        android:footerDividersEnabled="true"
+	        android:listSelector="@color/transparent"
+	        android:background="@color/transparent"
+	         >
+	      </ListView>
+
+  </LinearLayout>   
+     
+</LinearLayout>

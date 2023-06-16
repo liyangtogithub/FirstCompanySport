@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/share_linear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e4e4e4"
+    android:orientation="vertical" >
+
+    <cn.sharesdk.framework.TitleLayout
+        android:id="@+id/share_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </cn.sharesdk.framework.TitleLayout>
+
+    <LinearLayout
+        android:id="@+id/share_body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/share_content1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/edge_20"
+            android:layout_marginRight="@dimen/edge_20"
+            android:layout_marginTop="@dimen/edge_40"
+            android:background="#bcbcbc"
+            android:text="@string/share_content"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/share_content_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/edge_40"
+            android:layout_marginTop="@dimen/edge_30"
+            android:text="@string/share_speak"
+            android:textColor="#ababab"
+            android:textSize="@dimen/fontsize_36" />
+
+        <EditText
+            android:id="@+id/share_content2"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/edge_200"
+            android:layout_marginLeft="@dimen/edge_40"
+            android:layout_marginRight="@dimen/edge_40"
+            android:layout_marginTop="@dimen/edge_20"
+            android:background="@drawable/shape_item_share"
+            android:cursorVisible="false"
+            android:gravity="top"
+            android:textSize="@dimen/fontsize_36" />
+
+        <LinearLayout
+            android:id="@+id/share_to_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/edge_30"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/share_to_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/edge_40"
+                android:text="@string/share_to"
+                android:textColor="#ababab"
+                android:textSize="@dimen/fontsize_36" />
+
+            <HorizontalScrollView
+                android:id="@+id/share_to_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:id="@+id/share_to_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="@dimen/edge_40"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

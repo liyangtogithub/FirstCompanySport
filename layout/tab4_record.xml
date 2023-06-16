@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/transparent" >
+
+    <FrameLayout
+        android:id="@+id/fl_record"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/record_main_radio"
+        android:layout_marginLeft="@dimen/edge_20"
+        android:layout_marginRight="@dimen/edge_20"
+        android:background="@color/transparent" >
+
+        <LinearLayout
+            android:id="@+id/record_list_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/transparent"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/record_list"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                 android:layout_marginTop="@dimen/edge_20"
+                android:listSelector="@color/transparent" >
+            </ListView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/record_statistics_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:background="@color/transparent"
+            android:orientation="vertical" >
+
+            <include
+                android:id="@+id/statistics_xml"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                layout="@layout/statistics"
+                android:background="@color/transparent" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/record_main_radio"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+         android:layout_marginTop="@dimen/edge_0"
+        android:background="@color/milkwhite"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/edge_10" >
+
+        <LinearLayout
+            android:id="@+id/record_linear0"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.00"
+            android:gravity="center"
+            android:orientation="vertical"     
+            >
+
+            <ImageView
+                android:id="@+id/record_index0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/edge_0"
+                android:background="@drawable/index_out" />
+            
+            <ImageButton
+                android:id="@+id/record_ib_button0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:src="@drawable/record_evetime_in" />
+
+            <TextView
+                android:id="@+id/record_text0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/type_every" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/record_linear3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.00"
+            android:gravity="center"
+            android:visibility="gone"
+            android:orientation="vertical" >
+            <ImageView
+                android:id="@+id/record_index3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/edge_0"
+                android:background="@drawable/index_out" />
+
+            <ImageButton
+                android:id="@+id/record_ib_button3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:src="@drawable/record_evetime_in" />
+
+            <TextView
+                android:id="@+id/record_text3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/type_everyday" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/record_linear1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.00"
+            android:gravity="center"
+            android:orientation="vertical" >
+            <ImageView
+                android:id="@+id/record_index1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/edge_0"
+                android:background="@drawable/index_out" />
+
+            <ImageButton
+                android:id="@+id/record_ib_button1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:src="@drawable/record_statistik_in" />
+
+            <TextView
+                android:id="@+id/record_text1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/type_statistik" >
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/record_linear2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.00"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/record_index2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/edge_0"
+                android:background="@drawable/index_in" />
+
+            <ImageButton
+                android:id="@+id/record_ib_button2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:src="@drawable/record_best_in" />
+
+            <TextView
+                android:id="@+id/record_text2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/type_best" >
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

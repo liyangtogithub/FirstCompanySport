@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+        <TextView
+      android:id="@+id/tv_title"
+      android:layout_width="fill_parent"
+      android:layout_height="@dimen/edge_90"
+      android:text="@string/update_title"
+      android:background="@color/pink"
+      android:textSize="@dimen/fontsize_36"
+      android:textColor="@color/white"
+      android:gravity="center"
+       />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title"
+            android:background="@color/white"
+            android:textColor="@color/white" >
+
+            <TextView
+                android:id="@+id/tv_toast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/edge_50"
+                android:layout_marginTop="@dimen/edge_50"
+                android:text="@string/update_toast"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fontsize_36" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/edge_74"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/edge_30"
+                android:layout_marginRight="@dimen/edge_30"
+                android:layout_below="@+id/tv_toast">
+
+                <Button
+                    android:id="@+id/btn_update"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="@dimen/edge_20"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_btn_dark"
+                    android:text="@string/btn_update"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:textSize="@dimen/fontsize_36" />
+
+                <Button
+                    android:id="@+id/btn_cancel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="@dimen/edge_20"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_btn_dark"
+                    android:text="@string/btn_cancel"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/fontsize_36" />
+            </LinearLayout>
+        </RelativeLayout>
+                <View 
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/edge_30"  
+                    android:background="@color/white"  
+                />
+
+</LinearLayout>

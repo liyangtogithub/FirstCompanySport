@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="horizontal">
+	<ImageView
+	    android:id="@+id/msgl_head"
+		android:layout_width="56dp"
+		android:layout_height="56dp"
+		android:layout_marginTop="@dimen/edge_3"
+        android:layout_marginBottom="@dimen/edge_3"
+        android:layout_marginRight="@dimen/edge_40"
+		android:layout_gravity="center_vertical"
+		android:src="@drawable/headdefault"
+		 />
+
+        <LinearLayout 
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_vertical"  
+          android:layout_weight="1" 
+          android:layout_marginRight="@dimen/edge_20"
+          android:orientation="vertical" 
+        >
+        <LinearLayout android:layout_width="fill_parent"
+	     android:layout_height="wrap_content" 
+	     android:orientation="horizontal">
+           <TextView
+               android:id="@+id/msgl_text1"
+               android:layout_width="0dp"
+               android:layout_height="fill_parent"
+               android:gravity="center_vertical"
+               android:layout_weight="1" 
+               android:textSize="@dimen/fontsize_36" 
+               android:layout_marginRight="1dp"
+               android:textColor="@color/black"
+            ></TextView> 
+            <TextView
+               android:id="@+id/msgl_text2"
+               android:layout_width="wrap_content"
+               android:layout_height="fill_parent"
+               android:layout_marginRight="@dimen/edge_20"
+               android:textColor="@color/black"
+               android:gravity="center_vertical|right"
+               android:textSize="@dimen/fontsize_36"
+            ></TextView> 
+
+        </LinearLayout>  
+            <TextView
+               android:id="@+id/msgl_text3"
+               android:layout_width="fill_parent"
+               android:gravity="center_vertical"
+               android:layout_height="25dp"
+               android:textColor="@color/black"
+               android:textSize="@dimen/fontsize_30"   
+            ></TextView> 
+      </LinearLayout>    
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/medal_bg">
+ 
+	<ImageView
+    android:id="@+id/iv_light"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/medal_light" />
+
+    <ImageView
+    android:id="@+id/iv_medal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="@dimen/edge_150"
+    android:background="@drawable/medal_0" />
+    
+        
+    <ImageView
+        android:id="@+id/iv_congratulation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_medal"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/medal_congratulation" 
+        android:visibility="invisible"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/edge_20"
+        android:layout_below="@+id/iv_congratulation"
+        android:orientation="horizontal"
+        android:visibility="invisible" >
+
+        <ImageView
+            android:id="@+id/iv_texticon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/medal_texticon" />
+
+        <TextView
+            android:id="@+id/tv_medaltoast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/edge_20"
+            android:layout_toRightOf="@+id/iv_texticon"
+            android:text="获得跑步运动奖章"
+            android:textColor="@color/yellow"
+            android:textSize="@dimen/fontsize_40" />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:layout_width="match_parent"
+        android:layout_height="@dimen/middle1height"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+        android:id="@+id/rl_type1"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"
+        android:background="@color/gray_dark">      
+
+        <TextView
+        android:id="@+id/tv_type1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/time"
+        android:textColor="@color/gray_title"
+        android:textSize="@dimen/fontsize_34"
+        android:shadowDy="1"
+        android:shadowColor="@color/white"
+        android:shadowRadius="1"
+        android:layout_centerInParent="true"/> 
+
+            </RelativeLayout> 
+
+                <RelativeLayout
+        android:id="@+id/rl_type2"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"
+        android:background="@color/gray_dark">      
+    
+        <TextView
+        android:id="@+id/tv_type2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/calorie"
+        android:textColor="@color/gray_title"
+        android:textSize="@dimen/fontsize_34"
+        android:shadowDy="1"
+        android:shadowColor="@color/white"
+        android:shadowRadius="1"
+        android:layout_centerInParent="true"/> 
+
+            </RelativeLayout> 
+            
+        <RelativeLayout
+        android:id="@+id/rl_type3"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"
+        android:background="@color/gray_dark">      
+    
+        <TextView
+        android:id="@+id/tv_type3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/distance"
+        android:textColor="@color/gray_title"
+        android:textSize="@dimen/fontsize_34"
+        android:shadowDy="1"
+        android:shadowColor="@color/white"
+        android:shadowRadius="1"
+        android:layout_centerInParent="true"/> 
+        </RelativeLayout> 
+</LinearLayout>

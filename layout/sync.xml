@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+        <TextView
+      android:id="@+id/tv_title"
+      android:layout_width="fill_parent"
+      android:layout_height="@dimen/edge_90"
+      android:text="@string/syncaccount_title"
+      android:background="@color/pink"
+      android:textSize="@dimen/fontsize_36"
+      android:textColor="@color/white"
+      android:gravity="center"
+       />
+            
+       <LinearLayout
+             android:id="@+id/linearLayout1"
+             android:layout_width="fill_parent"
+             android:layout_height="@dimen/edge_120"
+             android:orientation="horizontal"
+             android:layout_gravity="center"
+              >
+             <View 
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"  
+                    android:layout_weight="1"  
+               />
+
+           
+             <Button
+                  android:id="@+id/button1"
+                  android:layout_width="@dimen/edge_80"
+                  android:layout_height="@dimen/edge_80"
+                  android:layout_marginRight="@dimen/edge_10"
+                  android:layout_gravity="center"
+                  android:background="@drawable/shape_buttomitem"
+                  android:text="-"
+                  android:textColor="@color/white"
+                  android:textSize="@dimen/fontsize_46" />
+               <EditText
+                android:id="@+id/et_year"
+                android:layout_width="@dimen/edge_160"
+                android:layout_height="@dimen/edge_90"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/boder_edit"
+                android:gravity="center"
+                android:text="2013"
+                android:inputType="number"
+                android:textColor="@color/pink"
+                android:enabled="false"
+                android:textSize="@dimen/edge_60" />
+              <EditText
+                android:layout_width="@dimen/edge_80"
+                android:layout_height="@dimen/edge_90"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/boder_edit"
+                android:gravity="center"
+                android:text="@string/type_year"
+                android:textColor="@color/pink"
+                android:enabled="false"
+                android:textSize="@dimen/edge_60" />
+            
+              <EditText
+                android:id="@+id/et_month"
+                android:layout_width="@dimen/edge_80"
+                android:layout_height="@dimen/edge_90"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/boder_edit"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="10"
+                android:inputType="number"
+                android:textColor="@color/pink"
+                android:enabled="false"
+                android:textSize="@dimen/edge_60" />
+              <EditText
+                android:layout_width="@dimen/edge_80"
+                android:layout_height="@dimen/edge_90"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/boder_edit"
+                android:gravity="center"
+                android:text="@string/type_month"
+                android:textColor="@color/pink"
+                android:enabled="false"
+                android:textSize="@dimen/edge_60" />
+
+               <Button
+                  android:id="@+id/button2"
+                  android:layout_width="@dimen/edge_80"
+                  android:layout_height="@dimen/edge_80"
+                  android:layout_marginLeft="@dimen/edge_10"
+                  android:layout_gravity="center"
+                  android:background="@drawable/shape_buttomitem"
+                  android:text="+"
+                  android:textColor="@color/white"
+                  android:textSize="@dimen/fontsize_46" />
+                <View 
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"  
+                    android:layout_weight="1"  
+               />
+
+           </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/edge_10"
+                android:layout_marginBottom="@dimen/edge_10"
+                android:text="@string/syncaccount_toast"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fontsize_32" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/edge_74"
+                android:layout_marginLeft="@dimen/edge_30"
+                android:layout_marginRight="@dimen/edge_30" >
+
+                <Button
+                    android:id="@+id/btn_yes"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="@dimen/edge_20"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_btn_dark"
+                    android:gravity="center"
+                    android:text="@string/yes_str"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/fontsize_36" />
+
+                <Button
+                    android:id="@+id/btn_no"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="@dimen/edge_20"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_btn_dark"
+                    android:gravity="center"
+                    android:text="@string/no_str"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/fontsize_36" />
+            </LinearLayout>
+
+
+                <View 
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/edge_30"  
+                    android:background="@color/white"  
+                />
+
+</LinearLayout>

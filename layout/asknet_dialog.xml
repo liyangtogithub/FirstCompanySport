@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/pink"
+    android:orientation="vertical" >
+       <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="@dimen/edge_20"
+        android:paddingRight="@dimen/edge_20"
+        android:gravity="center_vertical"
+        android:text="@string/dialog_title"
+        android:textColor="@color/white"
+        android:textSize="28dp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/edge_20"
+        android:layout_marginLeft="@dimen/edge_10"
+        android:layout_marginRight="@dimen/edge_10"
+        android:background="@drawable/shape_item_share"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_marginLeft="@dimen/edge_20"
+            android:layout_marginRight="@dimen/edge_20"
+            android:background="@color/list_divider" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/edge_20"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/edge_20"
+            android:paddingRight="@dimen/edge_20"
+            android:text="@string/dialogmsg_str"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/fontsize_42" />
+
+        <CheckBox
+            android:id="@+id/adkd_CBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/edge_20"
+            android:layout_marginTop="10dp"
+            android:checked="true"
+            android:text="@string/noask_str"
+            android:textColor="@color/gray" />
+
+        <Button
+            android:id="@+id/adkd_button"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/edge_40"
+            android:background="@drawable/selector_btn_dark"
+            android:textSize="@dimen/fontsize_36"
+            android:text="@string/sure_str"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>

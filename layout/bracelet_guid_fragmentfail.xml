@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+ 	android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e4e4e4" >
+ <include
+        android:id="@+id/record_title"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        layout="@layout/rl_title" />
+    <ScrollView
+         android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+        android:fillViewport="true"
+         android:layout_below="@id/record_title"
+        android:scrollbars="none" >
+
+        <LinearLayout
+           android:layout_width="match_parent"
+    		android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+    			android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="22dp"
+                android:orientation="vertical" >
+
+              
+
+                <TextView
+                     android:layout_width="wrap_content"
+    				android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="44dp"
+                    android:text="@string/loop_connect_info1"
+                    android:textColor="#0079ea"
+                    android:textSize="19sp" />
+
+                <TextView
+                     android:layout_width="wrap_content"
+    				android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="11dp"
+                    android:text="@string/loop_connect_info2"
+                    android:textColor="#4b4b4b"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+
+         	<ImageView 
+         	   android:layout_height="225dp"
+         	    android:layout_width="match_parent"
+         	      android:layout_marginTop="35dp" 
+         	    android:src="@drawable/tutorial"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+    			android:layout_height="match_parent"
+                android:layout_marginBottom="45dp"
+                android:layout_marginTop="19dp" >
+
+                <Button
+                    android:id="@+id/btn_connect"
+                    android:layout_width="178dp"
+                    android:layout_height="41dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="19dp"
+                    android:background="@drawable/selector_btn_dark"
+                    android:text="@string/loop_reconnect"
+                    android:textColor="#fff"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

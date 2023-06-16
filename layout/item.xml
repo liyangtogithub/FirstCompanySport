@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+	
+ 	<View
+ 	android:id="@+id/v_edge"
+	android:layout_width="fill_parent"
+	android:layout_height="@dimen/edge_20"
+    android:background="@color/pink"
+	/>
+<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="30.0dip"
+		android:id="@+id/classGroupLayout"
+		android:background="@drawable/shape_item_top"
+		android:gravity="center"
+		android:orientation="vertical">
+
+		    <TextView
+				android:id="@+id/class_part_name"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:background="@drawable/shape_item_top"
+				android:ellipsize="end"
+				android:text="111111111111111"
+				android:textColor="#253441"
+				android:singleLine="true"
+				android:textSize="17sp"
+				/>
+		    
+						<View
+				android:layout_width="fill_parent"
+				android:layout_height="@dimen/edge_2"
+                android:background="#d9d9d9"
+				/>
+	</LinearLayout>
+
+		<LinearLayout
+		    android:id="@+id/ll_item"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:background="@drawable/shape_item_bottom"
+		    android:orientation="horizontal" >
+
+		    <LinearLayout
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_margin="2dp"
+		        android:layout_weight="1"
+		        android:orientation="vertical" >
+
+		        <TextView
+		            android:id="@+id/time"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:textColor="#000000"
+		            android:textSize="16sp" />
+
+		        <TextView
+		            android:id="@+id/duration"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:text="持续时间：19分钟"
+		            android:textColor="#000000"
+		            android:textSize="16sp" />
+		    </LinearLayout>
+
+		    <LinearLayout
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_margin="2dp"
+		        android:layout_weight="1"
+		        android:orientation="vertical" >
+
+		        <TextView
+		            android:id="@+id/text2"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:text="已完成"
+		            android:textColor="#000000"
+		            android:textSize="16sp" />
+
+		        <TextView
+		            android:id="@+id/tired"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:text="疲劳度：轻松"
+		            android:textColor="#000000"
+		            android:textSize="16sp" />
+		    </LinearLayout>
+
+		    <ImageView
+		        android:id="@+id/complete"
+		        android:layout_width="25dp"
+		        android:layout_height="25dp"
+		        android:layout_gravity="center"
+		        android:background="@drawable/completed" />
+		</LinearLayout>
+</RelativeLayout>

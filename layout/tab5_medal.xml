@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" 
+        android:id="@+id/medallayout"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+         <include
+            android:id="@+id/rl_middle1_type"
+            android:layout_width="match_parent"
+        	android:layout_height="@dimen/edge_80"
+            layout="@layout/rl_title"
+            android:visibility="gone" />
+
+<ScrollView android:id="@+id/myscroll"
+    android:layout_width="fill_parent"
+    android:layout_height="0dp"  
+    android:layout_weight="1"
+    android:layout_marginTop="@dimen/edge_20"
+    android:layout_marginBottom="@dimen/edge_20"    
+    android:scrollbars="none"  
+    >
+    
+        <LinearLayout
+        
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    
+       
+
+        <LinearLayout
+            android:id="@+id/lin_1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/edge_20"
+            android:layout_marginRight="@dimen/edge_20"
+            android:background="@drawable/shape_item_share"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/row_title1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:padding="@dimen/edge_10"
+                android:textStyle="bold"
+                android:text="@string/medal_type"
+                android:textColor="@color/black" />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/edge_2"
+                android:background="@color/gray_line" >
+            </View>
+
+		<GridView  
+		        android:id="@+id/gv_1"  
+		        android:layout_width="fill_parent"  
+		        android:layout_height="wrap_content"  
+                android:gravity="center"
+                android:verticalSpacing="@dimen/edge_2"
+                android:numColumns="3" 
+            	android:background="@drawable/shape_item_bottom"   
+        	/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/edge_20"
+            android:layout_marginRight="@dimen/edge_20"
+            android:layout_marginTop="@dimen/edge_10"
+            android:background="@drawable/shape_item_share"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/row_title2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:padding="@dimen/edge_10"
+                android:text="@string/medal_times"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/edge_2"
+                android:background="@color/gray_line" >
+            </View>
+
+            <GridView
+                android:id="@+id/gv_2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:verticalSpacing="@dimen/edge_2"
+                android:numColumns="3" 
+            	android:background="@drawable/shape_item_bottom"
+                />
+
+        </LinearLayout>
+
+         <LinearLayout
+            android:id="@+id/lin_3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/edge_20"
+            android:layout_marginRight="@dimen/edge_20"
+            android:layout_marginTop="@dimen/edge_10"
+            android:background="@drawable/shape_item_share"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/row_title3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:padding="@dimen/edge_10"
+                android:text="@string/medal_time"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/edge_2"
+                android:background="@color/gray_line" >
+            </View>
+
+                        <GridView  
+		        android:id="@+id/gv_3"  
+		        android:layout_width="fill_parent"  
+		        android:layout_height="wrap_content"
+                android:gravity="center"
+                android:verticalSpacing="@dimen/edge_2"
+                android:numColumns="3" 
+            	android:background="@drawable/shape_item_bottom"      
+        	/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/edge_20"
+            android:layout_marginRight="@dimen/edge_20"
+            android:layout_marginTop="@dimen/edge_10"
+            android:background="@drawable/shape_item_share"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/row_title4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:padding="@dimen/edge_10"
+                android:text="@string/medal_distance"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
+
+            <View
+                android:id="@+id/view4"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/edge_2"
+                android:background="@color/gray_line" >
+            </View>
+            
+                        <GridView  
+		        android:id="@+id/gv_4"  
+		        android:layout_width="fill_parent"  
+		        android:layout_height="wrap_content"
+                android:gravity="center"
+                android:verticalSpacing="@dimen/edge_2"
+                android:numColumns="3" 
+            	android:background="@drawable/shape_item_bottom"     
+        	/>
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_5"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/edge_20"
+            android:layout_marginRight="@dimen/edge_20"
+            android:layout_marginTop="@dimen/edge_10"
+            android:background="@drawable/shape_item_share"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/row_title5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:padding="@dimen/edge_10"
+                android:text="@string/medal_criticism"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
+
+            <View
+                android:id="@+id/view5"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/edge_2"
+                android:background="@color/gray_line" >
+            </View>
+            
+ 			<GridView  
+		        android:id="@+id/gv_5"  
+		        android:layout_width="fill_parent"  
+		        android:layout_height="wrap_content"
+            	android:background="@drawable/shape_item_bottom"
+                android:gravity="center"
+                android:verticalSpacing="@dimen/edge_2"
+                android:numColumns="3"  
+        	/>
+
+        </LinearLayout> 
+     </LinearLayout>       
+   </ScrollView>     
+</LinearLayout>

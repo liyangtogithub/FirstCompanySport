@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" 
+    android:background="@color/black"
+    >
+    <ImageView
+        android:id="@+id/note_image"
+        android:layout_width="@dimen/edge_260"
+        android:layout_height="fill_parent"     
+        android:layout_marginLeft="@dimen/edge_0" 
+        android:src="@drawable/medal_29"
+        />
+
+    <TextView
+        android:id="@+id/note_text"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:text="@string/medal_31_note"
+        android:textSize="@dimen/edge_40"
+        android:textColor="@color/white" />
+
+</LinearLayout>

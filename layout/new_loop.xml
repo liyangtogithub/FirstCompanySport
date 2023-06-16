@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e4e4e4"
+   >
+
+    <include
+        android:id="@+id/record_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/edge_90"
+        android:layout_alignParentTop="true"
+        layout="@layout/rl_title" />
+
+    <RelativeLayout
+        android:id="@+id/loop_content1"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="@dimen/edge_20"
+        android:layout_marginRight="@dimen/edge_20"
+        android:layout_marginTop="@dimen/edge_130"
+        android:background="@drawable/shape_item"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/loop_operate" />
+
+        <TextView
+            android:id="@+id/loop_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="60dp"
+            android:text="@string/bluetooth_notconnect"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/fontsize_34" />
+
+        <ImageView
+            android:id="@+id/loop_img_power"
+            android:layout_width="26dp"
+            android:layout_height="46dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/loop_power_0" />
+
+        <TextView
+            android:id="@+id/loop_tv_power"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="60dp"
+            android:text="--"
+            android:textColor="@color/black"
+            android:textSize="@dimen/fontsize_34" />
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="@dimen/edge_20"
+            android:layout_marginRight="@dimen/edge_20"
+            android:layout_marginTop="@dimen/edge_300"
+            android:background="@drawable/shape_item" >
+
+            <TextView
+                android:id="@+id/syn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:text="@string/loop_manage_text1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fontsize_34" />
+
+            <TextView
+                android:id="@+id/syn_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/syn"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="#8b8b8b"
+                android:textSize="@dimen/fontsize_24" />
+
+             <ImageView
+                android:id="@+id/loop_loading"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/loop_update" />
+            
+             <ProgressBar 
+                android:id="@+id/loop_progress"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:visibility="invisible"
+                 />
+        </RelativeLayout>
+
+    <Button
+        android:id="@+id/addDevice"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/edge_74"
+        android:layout_marginLeft="@dimen/edge_80"
+        android:layout_marginRight="@dimen/edge_80"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/selector_btn_dark"
+        android:gravity="center"
+        android:text="@string/loop_manage_text2"
+        android:textColor="@color/white"
+        android:textSize="@dimen/fontsize_40" />
+
+</RelativeLayout>

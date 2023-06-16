@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:background="@drawable/bg_button">
+
+<ImageView
+    android:id="@+id/iv_medal_icon"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/fontsize_112"
+    android:layout_marginTop="@dimen/edge_10"
+    android:src="@drawable/no_medal_0" />
+
+<TextView
+    android:id="@+id/tv_medal_toast"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center|top"
+    android:text="@string/medal_get" 
+    android:textColor="@color/gray_data"
+    android:textSize="@dimen/fontsize_32"
+    android:shadowDy="1"
+    android:shadowColor="@color/white"
+    android:shadowRadius="1"
+    />  
+ <TextView
+    android:id="@+id/tv_medal_number"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center|top"
+    android:text="@string/medal_get" 
+    android:textColor="@color/gray_data"
+    android:textSize="@dimen/fontsize_32"
+    android:shadowDy="1"
+    android:shadowColor="@color/white"
+    android:shadowRadius="1"
+    android:layout_marginBottom="@dimen/edge_10"   
+    />   
+</LinearLayout>

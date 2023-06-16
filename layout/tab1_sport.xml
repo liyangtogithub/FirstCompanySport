@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:background="@color/transparent">
+
+
+                      <RelativeLayout
+        android:id="@+id/rl_anim"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rl_middle1_type"
+        android:background="@color/transparent">
+
+   	<RelativeLayout
+   	    android:id="@+id/rl_monthdistance" 
+   	    android:layout_width="wrap_content"
+   	    android:layout_height="wrap_content"
+   	    android:layout_alignParentLeft="true"
+   	    android:layout_alignParentBottom="true"
+   	    android:layout_marginLeft="@dimen/anim_distance_left"
+   	    android:layout_marginBottom="@dimen/anim_distance_bottom"
+   	    >
+   	      	    
+ 	    <ImageView
+	   	    android:layout_width="@dimen/edge_470"
+	   	    android:layout_height="@dimen/edge_470"
+	   	    android:src="@drawable/monthdistance2"
+	   	    android:background="@drawable/monthdistance1" />
+	   	     
+	   	 <ImageView
+  	        android:id="@+id/iv_monthdistance_bg"
+	   	    android:layout_width="@dimen/edge_470"
+	   	    android:layout_height="@dimen/edge_470"
+	   	    android:background="@drawable/monthdistance5" />  
+	   	    
+	   	 <ImageView
+  	        android:id="@+id/iv_monthdistance_fg"
+	   	    android:layout_width="@dimen/edge_470"
+	   	    android:layout_height="@dimen/edge_470"
+	   	    android:background="@drawable/monthdistance4" 
+	   	    android:visibility="gone"/>  
+	   	    
+	   	 <ImageView
+  	        android:id="@+id/iv_monthdistance_rotate"
+	   	    android:layout_width="@dimen/edge_470"
+	   	    android:layout_height="@dimen/edge_470"
+	   	    android:background="@drawable/monthdistance3" />  
+  	    
+   	 </RelativeLayout>
+   	 
+   	    	<RelativeLayout    
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_alignLeft="@+id/rl_monthdistance"
+    	    android:layout_alignRight="@+id/rl_monthdistance"
+    	    android:layout_alignTop="@+id/rl_monthdistance"
+    	    android:layout_marginTop="@dimen/edge_130"
+    	    >
+    	    
+    	        	<TextView
+    	    android:id="@+id/tv_alldistance_label"
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="wrap_content"
+    	    android:text="@string/month_distance"
+    	    android:gravity="center"
+    	    android:textSize="@dimen/fontsize_40"
+    	    android:textColor="@color/white"
+    	    android:shadowDy="1"
+	        android:shadowColor="@color/gray_data"
+	        android:shadowRadius="1"/>
+    	        	
+    	    <TextView
+    	        android:id="@+id/tv_alldistance_number"
+    	        android:layout_width="wrap_content"
+    	        android:layout_height="wrap_content"
+    	        android:layout_centerHorizontal="true"
+    	        android:layout_marginTop="@dimen/edge_30"
+    	        android:text="0"
+    	        android:textColor="@color/white"
+    	        android:textSize="@dimen/fontsize_100"
+    	        android:shadowDy="1"
+		        android:shadowColor="@color/gray_data"
+		        android:shadowRadius="1" />
+    	        	
+    	    <TextView
+    	    android:id="@+id/tv_alldistance_unit"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:text="@string/kilometer"
+    	    android:gravity="center"
+    	    android:layout_below="@+id/tv_alldistance_label"
+    	    android:layout_toRightOf="@+id/tv_alldistance_number"
+    	    android:layout_alignBaseline="@+id/tv_alldistance_number"
+    	    android:textSize="@dimen/fontsize_36"
+    	    android:layout_marginLeft="@dimen/edge_10"
+    	    android:textColor="@color/white"
+    	    android:shadowDy="1"
+	        android:shadowColor="@color/gray_data"
+	        android:shadowRadius="1"/> 	    
+    	</RelativeLayout>
+    	
+   	    	   	   	<RelativeLayout
+    	    android:id="@+id/rl_lastrun"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_alignParentBottom="true"
+    	    android:layout_alignParentRight="true"
+    	    android:layout_marginRight="@dimen/anim_run_right"
+    	    android:layout_marginBottom="@dimen/anim_run_bottom">
+   	      	    
+ 	     <ImageView
+	   	    android:layout_width="wrap_content"
+	   	    android:layout_height="wrap_content"
+    	    android:src="@drawable/lastrun2"
+    	    android:background="@drawable/lastrun1"/>
+
+  	     <ImageView
+  	        android:id="@+id/iv_lastrun_bg"
+	   	    android:layout_width="wrap_content"
+	   	    android:layout_height="wrap_content"
+	   	    android:background="@drawable/lastrun5" />  
+	   	    
+	   	 <ImageView
+  	        android:id="@+id/iv_lastrun_fg"
+	   	    android:layout_width="wrap_content"
+	   	    android:layout_height="wrap_content"
+	   	    android:background="@drawable/lastrun4" 
+	   	    android:visibility="gone"/>  
+	   	    
+	   	 <ImageView
+  	        android:id="@+id/iv_lastrun_rotate"
+	   	    android:layout_width="wrap_content"
+	   	    android:layout_height="wrap_content"
+	   	    android:background="@drawable/lastrun3" />  
+  	    
+  	    
+  	    
+   	 </RelativeLayout>
+	
+    	<RelativeLayout    
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_alignLeft="@+id/rl_lastrun"
+    	    android:layout_alignRight="@+id/rl_lastrun"
+    	    android:layout_alignTop="@+id/rl_lastrun"
+    	    android:layout_marginTop="40dp"
+    	    >
+    	    
+    	        	<TextView
+    	    android:id="@+id/tv_lastrun_label"
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="wrap_content"
+    	    android:text="@string/last_run"
+    	    android:gravity="center"
+    	    android:textSize="@dimen/fontsize_28"
+    	    android:textColor="@color/white"
+    	    android:shadowDy="1"
+	        android:shadowColor="@color/gray_data"
+	        android:shadowRadius="1"/>
+    	
+    	    <LinearLayout 
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_below="@+id/tv_lastrun_label"
+    	    android:layout_centerHorizontal="true"
+    	    android:orientation="horizontal"   
+    	        >
+    	           	    <TextView
+    	    android:id="@+id/tv_lastrun_number"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:text="0"
+    	    android:gravity="center"
+    	    android:textSize="@dimen/fontsize_36"
+    	    android:textColor="@color/white"
+    	    android:shadowDy="1"
+	        android:shadowColor="@color/gray_data"
+	        android:shadowRadius="1"/>   	
+    	        	
+    	    <TextView
+    	    android:id="@+id/tv_alldistance_unit"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:text="@string/kilometer"
+    	    android:gravity="center"
+    	    android:textSize="@dimen/fontsize_28"
+    	    android:textColor="@color/white"
+    	    android:shadowDy="1"
+	        android:shadowColor="@color/gray_data"
+	        android:shadowRadius="1"/>  
+    	    </LinearLayout> 	
+    	</RelativeLayout>
+            </RelativeLayout> 
+
+   <RelativeLayout
+        android:id="@+id/rl_bottom_sport"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="@dimen/bottomheight">
+
+        <ImageView
+            android:id="@+id/iv_start"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/edge_58"
+            android:paddingRight="@dimen/edge_58"
+            android:src="@drawable/start"
+            android:background="@drawable/bg_button"
+            android:textSize="@dimen/fontsize_30" />
+     
+       <LinearLayout 
+            android:id="@+id/ll_sporttype"
+	        android:layout_width="wrap_content"
+	        android:layout_height="fill_parent"
+	        android:layout_alignParentBottom="true"
+	        android:layout_alignParentRight="true"
+	        android:orientation="horizontal"
+	        android:background="@drawable/bg_button"
+	        >
+        
+            <TextView
+            android:id="@+id/tv_sporttype"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:layout_marginRight="@dimen/edge_12"
+            android:layout_marginLeft="@dimen/edge_44"
+            android:text="@string/type_walk"
+            android:textColor="@color/white"
+            android:textSize="@dimen/fontsize_42" />
+            
+            <ImageView
+            android:id="@+id/tv_plan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/plan"
+            android:layout_marginRight="@dimen/edge_20"
+            android:layout_gravity="center"
+            android:textSize="@dimen/fontsize_30" />
+            
+        </LinearLayout>     
+    </RelativeLayout>  
+
+       <include 
+	        android:id="@+id/rl_middle1_type"
+	        android:layout_width="match_parent"
+       		android:layout_height="@dimen/middle_sport_height"
+	        android:layout_above="@+id/rl_middle2_data"
+	        layout = "@layout/rl_middle_sport"
+            /> 
+
+	   <include
+	       android:id="@+id/rl_middle2_data"
+	       android:layout_width="match_parent"
+           android:layout_height="@dimen/middle2height"
+	       android:layout_above="@+id/rl_bottom_sport"
+	       layout="@layout/rl_middle2" />
+
+</RelativeLayout>

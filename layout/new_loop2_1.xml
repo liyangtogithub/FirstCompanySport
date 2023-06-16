@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loop_back" >
+
+    <include
+        android:id="@+id/record_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/edge_90"
+        layout="@layout/rl_title" />
+
+    <LinearLayout
+        android:id="@+id/loop_lay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/edge_120"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/edge_26"
+            android:layout_marginRight="@dimen/edge_20"
+         
+            android:text="@string/loop_guide_title3"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/fontsize_46" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/edge_26"
+            android:layout_marginTop="@dimen/edge_40"
+            android:text="@string/loop_guide_content6"
+            android:textColor="@color/black"
+            android:textSize="@dimen/fontsize_34" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/loop_connect"
+        android:layout_below="@+id/loop_lay"
+         > 
+          <android.support.v4.view.ViewPager
+            android:id="@+id/adv_pager"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+             android:layout_alignParentTop="true"
+            android:layout_above="@+id/viewGroup" >
+        </android.support.v4.view.ViewPager>
+        <LinearLayout
+            android:id="@+id/viewGroup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="top|center_horizontal"
+            android:orientation="horizontal" >
+        </LinearLayout>
+        
+        
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/loop_connect"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:background="@color/gray_btn"
+        android:text="@string/loop_know"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

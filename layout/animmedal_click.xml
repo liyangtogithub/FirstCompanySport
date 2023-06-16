@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/medal_bg" >
+
+    <ImageView
+        android:id="@+id/iv_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/edge_168"
+        android:background="@drawable/medal_light" />
+
+    <ImageView
+        android:id="@+id/iv_medal"
+        android:layout_width="@dimen/edge_560"
+        android:layout_height="@dimen/edge_560"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/edge_168"
+        android:background="@drawable/medal_0" />
+
+    <TextView
+        android:id="@+id/iv_congratulation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_medal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/edge_60"
+        android:text="开始跑步"
+        android:textColor="@color/medal_name"
+        android:textSize="@dimen/fontsize_72"
+        android:shadowColor="@color/black"
+       	android:shadowDy="1"
+       	android:shadowDx="1"
+       	android:shadowRadius="1"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/edge_200"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_medaltoast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"          
+            android:text="获得跑步运动奖章"
+            android:textColor="@color/medal_explain"
+            android:textSize="@dimen/fontsize_42"
+            android:shadowColor="@color/white"
+       		android:shadowDy="1"
+       		android:shadowDx="1"
+        	android:shadowRadius="1"
+			/>
+    </RelativeLayout>
+
+</RelativeLayout>

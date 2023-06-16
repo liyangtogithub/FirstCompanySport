@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:layout_width="match_parent"
+        android:layout_height="@dimen/middle_sport_height"
+        android:background="@color/gray_dark"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+        android:id="@+id/rl_type1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:layout_gravity="center">      
+
+        <ImageView 
+            android:id="@+id/iv_type1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+            android:background="@drawable/icon_time"
+            android:layout_centerHorizontal="true"
+            />
+            
+	        <TextView
+	        android:id="@+id/tv_type1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/iv_type1"
+	        android:gravity="center"
+	        android:text="@string/time"
+	        android:textColor="@color/gray_title"
+	        android:textSize="@dimen/fontsize_32"
+	        android:layout_centerHorizontal="true"
+	        android:shadowDy="1"
+	        android:shadowColor="@color/white"
+	        android:shadowRadius="1"/> 
+
+            </RelativeLayout> 
+
+                <RelativeLayout
+        android:id="@+id/rl_type2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:layout_gravity="center">      
+    
+        <ImageView 
+        android:id="@+id/iv_type2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/icon_calorie"
+        android:layout_centerHorizontal="true"
+          />
+                    
+        <TextView
+        android:id="@+id/tv_type2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/iv_type2"
+        android:text="@string/calorie"
+        android:textColor="@color/gray_title"
+        android:textSize="@dimen/fontsize_32"
+        android:shadowDy="1"
+        android:shadowColor="@color/white"
+        android:shadowRadius="1"
+        android:layout_centerHorizontal="true"/> 
+
+            </RelativeLayout> 
+            
+        <RelativeLayout
+        android:id="@+id/rl_type3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:layout_gravity="center">      
+    
+        <ImageView 
+        android:id="@+id/iv_type3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/icon_times"
+        android:layout_centerHorizontal="true"
+          />
+            
+        <TextView
+        android:id="@+id/tv_type3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/iv_type3"
+        android:text="@string/times"
+        android:textColor="@color/gray_title"
+        android:textSize="@dimen/fontsize_32"
+        android:shadowDy="1"
+        android:shadowColor="@color/white"
+        android:shadowRadius="1"
+        android:layout_centerHorizontal="true"/> 
+        </RelativeLayout> 
+</LinearLayout>

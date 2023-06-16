@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:background="@color/pink"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:textColor="@color/white"
+        android:text="@string/change_alias_str"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/edge_20"
+        android:textSize="@dimen/fontsize_46" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:background="@color/white"
+        >
+
+       <EditText
+            android:id="@+id/d_changename"
+            android:layout_width="fill_parent"
+            android:hint="@string/putin_alias"
+            android:layout_height="@dimen/edge_74"
+            android:layout_marginLeft="@dimen/edge_20" 
+            android:layout_marginTop="@dimen/edge_20"
+            android:layout_marginBottom="@dimen/edge_20"
+            android:layout_marginRight="@dimen/edge_20"
+            android:background="@drawable/boder_edit"
+            android:gravity="center_vertical"
+            android:maxLength="20"
+            android:paddingLeft="@dimen/edge_20"
+            android:textColor="@color/black"
+            android:textSize="@dimen/fontsize_36" />
+
+       <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/edge_74"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/edge_30"
+                android:layout_marginRight="@dimen/edge_30"
+                android:layout_marginBottom="@dimen/edge_20"
+                android:layout_below="@+id/tv_toast">
+
+                <Button
+                    android:id="@+id/d_sureb"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="@dimen/edge_20"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_btn_dark"
+                    android:text="@string/sure_str"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:textSize="@dimen/fontsize_36" />
+
+                <Button
+                    android:id="@+id/d_cancleb"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="@dimen/edge_20"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_btn_dark"
+                    android:text="@string/btn_cancel"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/fontsize_36" />
+            </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

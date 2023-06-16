@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pink"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/edge_90" >
+
+        <include
+            android:id="@+id/rl_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/rl_title" />
+
+        <ImageButton
+            android:id="@+id/music"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bg_button"
+            android:paddingLeft="@dimen/edge_20"
+            android:paddingRight="@dimen/edge_20"
+            android:src="@drawable/music" >
+        </ImageButton>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/slider_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottomheight"
+        android:layout_alignParentBottom="true"
+        android:background="@color/pink" >
+
+        <LinearLayout
+            android:id="@+id/unlock_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/play"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/pink"
+                android:clickable="false"
+                android:src="@drawable/pause" />
+
+            <ImageButton
+                android:id="@+id/unlock"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/pink"
+                android:clickable="false"
+                android:src="@drawable/unlock" />
+
+            <ImageButton
+                android:id="@+id/stop"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/pink"
+                android:clickable="false"
+                android:src="@drawable/stop" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/lock_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#aa000000"
+            android:gravity="center" >
+
+            <ImageButton
+                android:id="@+id/locked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:src="@drawable/locked" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <include
+        android:id="@+id/rl_middle2_data"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/middle2height"
+        android:layout_above="@+id/slider_layout"
+        layout="@layout/rl_middle2" />
+
+    <include
+        android:id="@+id/rl_middle1_type"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/middle1height"
+        android:layout_above="@+id/rl_middle2_data"
+        layout="@layout/rl_middle1" />
+
+    <LinearLayout
+        android:id="@+id/exchange"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/edge_90"
+        android:layout_above="@id/rl_middle1_type"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/tableButton"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="#911650"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/chart"
+            android:textColor="#d02669"
+            android:textSize="@dimen/fontsize_34" >
+        </Button>
+
+        <Button
+            android:id="@+id/mapButton"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="#bb265e"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/map"
+            android:textColor="#f8eaef"
+            android:textSize="@dimen/fontsize_34" >
+        </Button>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/exchange"
+        android:layout_below="@id/title"
+        android:layout_weight="1" >
+
+        <RelativeLayout
+            android:id="@+id/map"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <com.baidu.mapapi.map.MapView
+                android:id="@+id/bmapView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:clickable="true" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/table"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:visibility="invisible" >
+        </LinearLayout>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/y_unit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/frame"
+        android:layout_marginLeft="@dimen/edge_20"
+        android:gravity="top"
+        android:text="@string/ylable"
+        android:textColor="@color/white"
+        android:textSize="@dimen/fontsize_30"
+        android:visibility="invisible" />
+    
+     <TextView
+        android:id="@+id/x_unit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/frame"
+        android:layout_alignRight="@id/frame"
+        android:text="@string/xlable"
+        android:textColor="@color/white"
+        android:textSize="@dimen/fontsize_30"
+        android:visibility="invisible" />
+
+</RelativeLayout>

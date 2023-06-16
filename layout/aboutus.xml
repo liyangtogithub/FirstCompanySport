@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/aboutus"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+       <RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+    <ImageView
+        android:id="@+id/bg_aboutus"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"     
+        android:layout_marginLeft="@dimen/edge_0" 
+        android:background="@drawable/aboutus"
+        />
+    
+    <TextView
+        android:id="@+id/tv_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/versioncode"
+        android:textSize="@dimen/fontsize_34"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@+id/bg_aboutus"
+        android:shadowDy="1"
+        android:shadowColor="@color/white"
+        android:shadowRadius="1"
+        android:layout_marginBottom="130dp"/>
+
+    </RelativeLayout>
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="140dp"
+       android:layout_alignParentBottom="true" >
+
+        <TextView
+        android:id="@+id/tv_weixin_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/weixin_number"
+        android:textSize="@dimen/fontsize_36"
+        android:layout_alignParentTop="true"
+        android:shadowDy="1"
+        android:shadowColor="@color/white"
+        android:shadowRadius="1"
+        android:layout_marginLeft="@dimen/edge_20"/>
+    
+                <TextView
+        android:id="@+id/tv_desaycare_addr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/desaycare_addr"
+        android:textSize="@dimen/fontsize_36"
+        android:layout_below="@+id/tv_weixin_number"
+               android:shadowDy="1"
+        android:shadowColor="@color/white"
+        android:shadowRadius="1"
+        android:layout_marginLeft="@dimen/edge_20"/>
+                        <TextView
+        android:id="@+id/tv_desay_ele"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/desay_ele"
+        android:textSize="@dimen/fontsize_28"
+        android:layout_above="@+id/tv_copyright"
+        android:shadowDy="1"
+        android:shadowColor="@color/white"
+        android:shadowRadius="1"
+        android:layout_centerHorizontal="true"/>
+                        
+                                <TextView
+        android:id="@+id/tv_copyright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/copyright"
+        android:textSize="@dimen/fontsize_28"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:shadowDy="1"
+        android:shadowColor="@color/white"
+        android:shadowRadius="1"
+        android:layout_marginBottom="@dimen/edge_20"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

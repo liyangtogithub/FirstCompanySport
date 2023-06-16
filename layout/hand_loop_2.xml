@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loop_back" >
+
+    <include
+        android:id="@+id/record_title"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        layout="@layout/rl_title" />
+  
+           <LinearLayout
+                android:id="@+id/record_content"
+                android:layout_width="match_parent"
+    			android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="22dp"
+                android:layout_marginTop="75dp"
+                android:orientation="vertical" >
+                
+                <TextView
+                    android:layout_width="wrap_content"
+    				android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="@string/loop_guide_title1"
+                    android:textColor="#0079ea"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+    				android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="11dp"
+                    android:text="@string/loop_guide_content1"
+                    android:textColor="#4b4b4b"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+
+         	<ImageView 
+         	   android:layout_height="fill_parent"
+         	    android:layout_width="fill_parent"
+         	     android:layout_above="@+id/btn_connect"
+         	     android:layout_below="@+id/record_content"
+         	    android:src="@drawable/bluebox"/>
+
+          
+
+                <Button
+                    android:id="@+id/btn_connect"
+                    android:layout_width="178dp"
+                    android:layout_height="41dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="40dp"
+                   	android:background="@drawable/selector_btn_dark"
+                    android:text="@string/loop_guide_title5"
+                    android:textColor="#fff"
+                    android:textSize="15sp" />
+       
+       
+
+</RelativeLayout>

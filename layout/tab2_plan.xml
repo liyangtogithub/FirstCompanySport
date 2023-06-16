@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:background="@color/transparent">
+
+
+	<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/edge_20"
+        android:layout_marginRight="@dimen/edge_20"     
+        android:layout_marginTop="@dimen/edge_20"
+        android:layout_marginBottom="@dimen/edge_20"
+        android:background="@color/pink" 
+        android:layout_above="@+id/index">
+
+     <ListView
+            android:id="@+id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"       
+            android:cacheColorHint="@color/transparent"
+            android:listSelector="@color/transparent"
+        	android:background="@drawable/boder_list" 
+             >
+        </ListView> 
+    </LinearLayout>	
+
+
+	<LinearLayout 
+	    android:orientation="horizontal" 
+	    android:id="@+id/main_radio" 
+		android:layout_alignParentBottom="true"
+	    android:layout_gravity="bottom" 
+	    android:background="@color/milkwhite"
+	    android:paddingBottom="@dimen/edge_10"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content">
+
+		<ImageButton
+		    android:id="@+id/ib_button0"
+		    android:layout_width="fill_parent"
+		    android:layout_height="@dimen/tab_bottom_height_82"
+		    android:layout_weight="1.00"
+		    android:background="@drawable/one"
+		    />
+
+		<ImageButton
+		    android:id="@+id/ib_button1"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="1.00"
+		    android:background="@drawable/nottwo"
+		    />
+		
+		<ImageButton
+		    android:id="@+id/ib_button2"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="1.00"
+		    android:background="@drawable/notthree"
+		    />
+	</LinearLayout>
+	
+ 	 <ImageView
+		    android:id="@+id/index"
+		    android:layout_above="@id/main_radio"
+		    android:layout_width="fill_parent"
+		    android:layout_height="14dp"
+		    android:background="@drawable/index1" android:contentDescription="TODO"/>  
+</RelativeLayout>
+

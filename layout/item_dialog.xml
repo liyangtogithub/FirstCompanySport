@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="horizontal"
+	android:padding="0dip"
+    android:background="@drawable/bg_list">
+
+    <!--   <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/edge_50"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        android:background="@color/gray_dark"
+        android:paddingLeft="@dimen/edge_40"
+        android:text="111111111"
+        android:enabled="false"
+        android:textStyle="bold"
+        android:textSize="@dimen/fontsize_30" /> -->  
+        
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/icon_walk"
+        android:paddingLeft="@dimen/edge_20"
+        android:paddingRight="@dimen/edge_20"/>   
+        
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/listitem_height_106"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        android:paddingLeft="@dimen/edge_10"
+        android:text="111111111"
+        android:textSize="@dimen/fontsize_36" />
+	<!--  <View
+		android:layout_width="fill_parent"
+		android:layout_height="@dimen/edge_2"
+        android:background="@color/gray_line"
+		/>-->
+</LinearLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/transparent" >
+
+    <RelativeLayout
+        android:id="@+id/statistics_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/edge_100"
+        android:layout_alignParentTop="true"
+        android:background="@color/pink" >
+
+        <TextView
+            android:id="@+id/statistics_month"
+            android:layout_width="@dimen/edge_340"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/statistics_month"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/edge_36" >
+        </TextView>
+
+        <ImageView
+            android:id="@+id/statistics_left_arrows"
+            android:layout_width="@dimen/edge_80"
+            android:layout_height="@dimen/edge_80"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/edge_10"
+            android:layout_toLeftOf="@id/statistics_month"
+            android:background="@drawable/arraws_left" />
+
+        <ImageView
+            android:id="@+id/statistics_right_arrows"
+            android:layout_width="@dimen/edge_80"
+            android:layout_height="@dimen/edge_80"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/edge_10"
+            android:layout_toRightOf="@id/statistics_month"
+            android:background="@drawable/arraws_right" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/statistics_type"
+        android:layout_below="@+id/statistics_title"
+        android:background="@color/transparent" >
+
+        <LinearLayout
+            android:id="@+id/statistics_table"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="@dimen/edge_0"
+            android:background="@color/gray"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/statistics_button"
+            android:layout_width="@dimen/edge_60"
+            android:layout_height="@dimen/edge_60"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="@dimen/edge_50"
+            android:layout_marginTop="@dimen/edge_50"
+            android:background="@drawable/fullscreen"
+            android:visibility="gone" >
+        </Button>
+
+        <TextView
+            android:id="@+id/y_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/statistics_title"
+            android:layout_marginLeft="@dimen/edge_3"
+            android:gravity="top"
+            android:text="@string/type_distance"
+            android:textColor="@color/white"
+            android:textSize="@dimen/fontsize_30" />
+
+        <TextView
+            android:id="@+id/x_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="@string/xlable"
+            android:textColor="@color/white"
+            android:textSize="@dimen/fontsize_30" />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/statistics_type"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/middle1height"
+        android:layout_above="@+id/statistics_data"
+        layout="@layout/rl_middle1" />
+
+    <include
+        android:id="@+id/statistics_data"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/middle2height"
+        android:layout_alignParentBottom="true"
+        layout="@layout/rl_middle2" />
+
+</RelativeLayout>
